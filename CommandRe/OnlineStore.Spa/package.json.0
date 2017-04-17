@@ -1,0 +1,13 @@
+{
+  "name": "onlinestore",
+  "version": "1.0.0",
+  "description": "An online store demo for presenting CommandRe engine capabilities",
+  "main": "app.module.ts",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

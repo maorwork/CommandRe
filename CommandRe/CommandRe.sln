@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRe.Domain", "CommandRe.Domain\CommandRe.Domain.csproj", "{63338AF9-5B0F-4959-953B-548815389E29}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRe.API", "CommandRe.API\CommandRe.API.csproj", "{C4B401E4-9DC6-44CD-9F10-3CC4D150735F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRe.ClientSdk", "CommandRe.ClientSdk\CommandRe.ClientSdk.csproj", "{23B1D4C7-9114-41A0-9C57-571D67975BF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Spa", "OnlineStore.Spa\OnlineStore.Spa.csproj", "{CC9B7F18-0478-452C-AF8C-A7912177C7F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{23B1D4C7-9114-41A0-9C57-571D67975BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23B1D4C7-9114-41A0-9C57-571D67975BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23B1D4C7-9114-41A0-9C57-571D67975BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9B7F18-0478-452C-AF8C-A7912177C7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9B7F18-0478-452C-AF8C-A7912177C7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9B7F18-0478-452C-AF8C-A7912177C7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9B7F18-0478-452C-AF8C-A7912177C7F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,5 +73,6 @@ Global
 		{7B9D16FE-BB8D-40E3-9216-1B5EFF798D63} = {7507EDDB-F4C9-4651-BE5F-CBD8E5275C25}
 		{C4B401E4-9DC6-44CD-9F10-3CC4D150735F} = {AA55DF9D-9161-4A07-A79D-E84A9C190843}
 		{23B1D4C7-9114-41A0-9C57-571D67975BF3} = {AA55DF9D-9161-4A07-A79D-E84A9C190843}
+		{CC9B7F18-0478-452C-AF8C-A7912177C7F3} = {7507EDDB-F4C9-4651-BE5F-CBD8E5275C25}
 	EndGlobalSection
 EndGlobal

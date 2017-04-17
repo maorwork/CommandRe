@@ -9,13 +9,15 @@ namespace OnlineStore.Data.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly DbContext Context;
+        protected readonly DbContext _context;
         private DbSet<TEntity> _entities;
 
         public Repository(DbContext context)
         {
-            Context = context;
-            _entities = Context.Set<TEntity>();
+            _context = context;
+            _context.ChangeTracker.QueryTrackingBehavior
+                = QueryTrackingBehavior.NoTracking;
+            _entities = _context.Set<TEntity>();
         }
 
         public TEntity Get(int id)

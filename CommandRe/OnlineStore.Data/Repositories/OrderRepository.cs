@@ -12,7 +12,7 @@ namespace OnlineStore.Data.Repositories
 
         public OnlineStoreContext OnlineStoreContext
         {
-            get { return Context as OnlineStoreContext; }
+            get { return _context as OnlineStoreContext; }
         }
     }
 }
