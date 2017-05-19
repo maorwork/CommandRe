@@ -18,6 +18,7 @@ using OnlineStore.Domain.Users;
 using OnlineStore.Data.Repositories;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 
 namespace OnlineStore.API
 {
@@ -42,7 +43,10 @@ namespace OnlineStore.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(_config);
-            services.AddDbContext<OnlineStoreContext>(ServiceLifetime.Scoped);
+            services.AddDbContext<OnlineStoreContext>(options => options.UseSqlServer(_config.GetConnectionString("OnlineStore")));
+            services.AddDbContext<OnlineStoreContext>
+                (options => options.UseSqlServer(
+                    _config.GetConnectionString("OnlineStore")), ServiceLifetime.Scoped);
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
