@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRe.Domain", "CommandRe.Domain\CommandRe.Domain.csproj", "{63338AF9-5B0F-4959-953B-548815389E29}"
 EndProject
@@ -24,6 +24,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Spa", "OnlineStore.Spa\OnlineStore.Spa.csproj", "{CC9B7F18-0478-452C-AF8C-A7912177C7F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.DataLoader", "OnlineStore.DataLoader\OnlineStore.DataLoader.csproj", "{8151169D-6947-4073-8B20-D02FD022F619}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandRe.POC", "CommandRe.POC", "{A2990431-FD18-4941-9074-30E74B628BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRe.POC", "CommandRe.POC\CommandRe.POC.csproj", "{BDEF76AB-A3D1-4D0F-9366-77A4BD4744FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +71,10 @@ Global
 		{8151169D-6947-4073-8B20-D02FD022F619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8151169D-6947-4073-8B20-D02FD022F619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8151169D-6947-4073-8B20-D02FD022F619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEF76AB-A3D1-4D0F-9366-77A4BD4744FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEF76AB-A3D1-4D0F-9366-77A4BD4744FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEF76AB-A3D1-4D0F-9366-77A4BD4744FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEF76AB-A3D1-4D0F-9366-77A4BD4744FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,5 +89,6 @@ Global
 		{23B1D4C7-9114-41A0-9C57-571D67975BF3} = {AA55DF9D-9161-4A07-A79D-E84A9C190843}
 		{CC9B7F18-0478-452C-AF8C-A7912177C7F3} = {7507EDDB-F4C9-4651-BE5F-CBD8E5275C25}
 		{8151169D-6947-4073-8B20-D02FD022F619} = {7507EDDB-F4C9-4651-BE5F-CBD8E5275C25}
+		{BDEF76AB-A3D1-4D0F-9366-77A4BD4744FF} = {A2990431-FD18-4941-9074-30E74B628BD2}
 	EndGlobalSection
 EndGlobal

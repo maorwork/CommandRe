@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace OnlineStore.Data.scaffold
 {
-    public partial class ProductCategory
+    public partial class ProductProductdescription
     {
         public long ProductId { get; set; }
-        public long CategoryId { get; set; }
+        public long DescriptionId { get; set; }
 
-        public virtual Category Category { get; set; }
+        public virtual Productdescription Description { get; set; }
         public virtual Product Product { get; set; }
     }
 }

@@ -43,7 +43,7 @@ namespace OnlineStore.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(_config);
-            services.AddDbContext<OnlineStoreContext>(options => options.UseSqlServer(_config.GetConnectionString("OnlineStore")));
+
             services.AddDbContext<OnlineStoreContext>
                 (options => options.UseSqlServer(
                     _config.GetConnectionString("OnlineStore")), ServiceLifetime.Scoped);

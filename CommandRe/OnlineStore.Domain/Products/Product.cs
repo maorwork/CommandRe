@@ -1,28 +1,33 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace CommandRe.Domain.Products
+namespace OnlineStore.Data.scaffold
 {
-    public class Product
+    public partial class Product
     {
         public Product()
         {
-            ShoppingCarts = new HashSet<OnlineStore.Domain.ShoppingCarts.ShoppingCartItem>();
-            Orders = new HashSet<OnlineStore.Domain.Orders.OrderItem>();
-            Categories = new HashSet<ProductCategory>();
+            ProductCategory = new HashSet<ProductCategory>();
+            ProductCategoryfeaturegroup = new HashSet<ProductCategoryfeaturegroup>();
+            ProductProductdescription = new HashSet<ProductProductdescription>();
+            ProductProductfeature = new HashSet<ProductProductfeature>();
+            ProductProductrelated = new HashSet<ProductProductrelated>();
         }
-        public int Id { get; set; }
+
+        public long ProductId { get; set; }
+        public string HighPic { get; set; }
         public string Name { get; set; }
-        public double Price { get; set; }
-        public int BrandId { get; set; }
-        public int TypeId { get; set; }
-        public int Quantity { get; set; }
-        public string Description { get; set; }
-        public string Image { get; set; }
-        public bool Active { get; set; }
+        public string Quality { get; set; }
+        public DateTime? ReleaseDate { get; set; }
+        public string Title { get; set; }
+        public DateTime? UpdateDate { get; set; }
+        public long? SupplierId { get; set; }
 
-
-        public virtual ICollection<ProductCategory> Categories { get; set; }
-        public virtual ICollection<OnlineStore.Domain.ShoppingCarts.ShoppingCartItem> ShoppingCarts { get; set; }
-        public virtual ICollection<OnlineStore.Domain.Orders.OrderItem> Orders { get; set; }
+        public virtual ICollection<ProductCategory> ProductCategory { get; set; }
+        public virtual ICollection<ProductCategoryfeaturegroup> ProductCategoryfeaturegroup { get; set; }
+        public virtual ICollection<ProductProductdescription> ProductProductdescription { get; set; }
+        public virtual ICollection<ProductProductfeature> ProductProductfeature { get; set; }
+        public virtual ICollection<ProductProductrelated> ProductProductrelated { get; set; }
+        public virtual Supplier Supplier { get; set; }
     }
 }
