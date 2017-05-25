@@ -13,7 +13,30 @@ namespace OnlineStore.Data
     {
         public DbSet<UserAddress> UserAddress { get; set; }
 
-        public DbSet<Product> Products { get; set; }
+        public virtual DbSet<Category> Category { get; set; }
+        public virtual DbSet<CategoryName> CategoryName { get; set; }
+        public virtual DbSet<Categoryfeaturegroup> Categoryfeaturegroup { get; set; }
+        public virtual DbSet<CategoryfeaturegroupFeaturegroup> CategoryfeaturegroupFeaturegroup { get; set; }
+
+        public virtual DbSet<Feature> Feature { get; set; }
+        public virtual DbSet<FeatureName> FeatureName { get; set; }
+        public virtual DbSet<Featuregroup> Featuregroup { get; set; }
+        public virtual DbSet<FeaturegroupName> FeaturegroupName { get; set; }
+
+        public virtual DbSet<Name> Name { get; set; }
+
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<ProductCategory> ProductCategory { get; set; }
+        public virtual DbSet<ProductCategoryfeaturegroup> ProductCategoryfeaturegroup { get; set; }
+        public virtual DbSet<ProductProductdescription> ProductProductdescription { get; set; }
+        public virtual DbSet<ProductProductfeature> ProductProductfeature { get; set; }
+        public virtual DbSet<ProductProductrelated> ProductProductrelated { get; set; }
+        public virtual DbSet<Productdescription> Productdescription { get; set; }
+        public virtual DbSet<Productfeature> Productfeature { get; set; }
+        public virtual DbSet<ProductfeatureFeature> ProductfeatureFeature { get; set; }
+        public virtual DbSet<Productrelated> Productrelated { get; set; }
+
+        public virtual DbSet<Supplier> Supplier { get; set; }
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
@@ -66,9 +89,6 @@ namespace OnlineStore.Data
             builder.Entity<ShoppingCart>().ConfigureShoppingCart();
 
             builder.Entity<ShoppingCartItem>().ConfigureShoppingCartItem();
-
-
-
 
         }
     }

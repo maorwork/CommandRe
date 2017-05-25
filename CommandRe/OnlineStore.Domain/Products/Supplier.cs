@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineStore.Data.scaffold
+namespace CommandRe.Domain.Products
 {
     public partial class Supplier
     {

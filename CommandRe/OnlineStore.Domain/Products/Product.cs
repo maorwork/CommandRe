@@ -1,7 +1,9 @@
-﻿using System;
+﻿using OnlineStore.Domain.Orders;
+using OnlineStore.Domain.ShoppingCarts;
+using System;
 using System.Collections.Generic;
 
-namespace OnlineStore.Data.scaffold
+namespace CommandRe.Domain.Products
 {
     public partial class Product
     {
@@ -28,6 +30,8 @@ namespace OnlineStore.Data.scaffold
         public virtual ICollection<ProductProductdescription> ProductProductdescription { get; set; }
         public virtual ICollection<ProductProductfeature> ProductProductfeature { get; set; }
         public virtual ICollection<ProductProductrelated> ProductProductrelated { get; set; }
+        public virtual ICollection<ShoppingCartItem> ShoppingCarts { get; set; }
+        public virtual ICollection<OrderItem> Orders { get; set; }
         public virtual Supplier Supplier { get; set; }
     }
 }
