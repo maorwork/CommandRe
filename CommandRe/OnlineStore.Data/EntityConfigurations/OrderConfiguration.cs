@@ -50,7 +50,7 @@ namespace OnlineStore.Data.EntityConfigurations
             b.HasOne(oi => oi.Product)
                 .WithMany(p => p.Orders)
                 .HasForeignKey(oi => oi.ProductId)
-                .HasPrincipalKey(p=>p.Id);
+                .HasPrincipalKey(p=>p.ProductId);
 
         }
 

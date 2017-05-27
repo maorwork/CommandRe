@@ -10,7 +10,7 @@ namespace OnlineStore.Data.EntityConfigurations
         {
             b.ToTable("Products","Product");
 
-            b.HasKey(o => o.Id);
+            b.HasKey(o => o.ProductId);
         }
     }
 }

@@ -30,7 +30,7 @@ namespace OnlineStore.Data.EntityConfigurations
             b.HasOne(sci => sci.Product)
                 .WithMany(p => p.ShoppingCarts)
                 .HasForeignKey(sci => sci.ProductId)
-                .HasPrincipalKey(p=>p.Id)
+                .HasPrincipalKey(p=>p.ProductId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             b.HasOne(sci => sci.ShoppingCart)
