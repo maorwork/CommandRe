@@ -81,7 +81,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Category>(entity =>
             {
-                entity.ToTable("category", "commandre");
+                entity.ToTable("category", "Product");
 
                 entity.Property(e => e.CategoryId)
                     .HasColumnName("category_id")
@@ -93,7 +93,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.CategoryId, e.NameId })
                     .HasName("PK_category_name_category_id");
 
-                entity.ToTable("category_name", "commandre");
+                entity.ToTable("category_name", "Product");
 
                 entity.HasIndex(e => e.CategoryId);
 
@@ -116,7 +116,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Categoryfeaturegroup>(entity =>
             {
-                entity.ToTable("categoryfeaturegroup", "commandre");
+                entity.ToTable("categoryfeaturegroup", "Product");
 
                 entity.Property(e => e.CategoryFeatureGroupId)
                     .HasColumnName("categoryFeatureGroup_id")
@@ -128,7 +128,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.CategoryFeatureGroupId, e.FeatureGroupId })
                     .HasName("PK_categoryfeaturegroup_featuregroup_categoryFeatureGroup_id");
 
-                entity.ToTable("categoryfeaturegroup_featuregroup", "commandre");
+                entity.ToTable("categoryfeaturegroup_featuregroup", "Product");
 
                 entity.HasIndex(e => e.CategoryFeatureGroupId);
 
@@ -151,7 +151,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Feature>(entity =>
             {
-                entity.ToTable("feature", "commandre");
+                entity.ToTable("feature", "Product");
 
                 entity.Property(e => e.FeatureId)
                     .HasColumnName("feature_id")
@@ -163,7 +163,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.FeatureId, e.NameId })
                     .HasName("PK_feature_name_feature_id");
 
-                entity.ToTable("feature_name", "commandre");
+                entity.ToTable("feature_name", "Product");
 
                 entity.HasIndex(e => e.FeatureId);
 
@@ -186,7 +186,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Featuregroup>(entity =>
             {
-                entity.ToTable("featuregroup", "commandre");
+                entity.ToTable("featuregroup", "Product");
 
                 entity.Property(e => e.FeatureGroupId)
                     .HasColumnName("featureGroup_id")
@@ -198,7 +198,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.FeatureGroupId, e.NameId })
                     .HasName("PK_featuregroup_name_featureGroup_id");
 
-                entity.ToTable("featuregroup_name", "commandre");
+                entity.ToTable("featuregroup_name", "Product");
 
                 entity.HasIndex(e => e.FeatureGroupId);
 
@@ -221,7 +221,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Name>(entity =>
             {
-                entity.ToTable("name", "commandre");
+                entity.ToTable("name", "Product");
 
                 entity.Property(e => e.NameId)
                     .HasColumnName("name_id")
@@ -232,7 +232,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Product>(entity =>
             {
-                entity.ToTable("product", "commandre");
+                entity.ToTable("product", "Product");
 
                 entity.HasIndex(e => e.SupplierId);
 
@@ -276,7 +276,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.ProductId, e.CategoryId })
                     .HasName("PK_product_category_product_id");
 
-                entity.ToTable("product_category", "commandre");
+                entity.ToTable("product_category", "Product");
 
                 entity.HasIndex(e => e.CategoryId);
 
@@ -302,7 +302,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.ProductId, e.CategoryFeatureGroupId })
                     .HasName("PK_product_categoryfeaturegroup_product_id");
 
-                entity.ToTable("product_categoryfeaturegroup", "commandre");
+                entity.ToTable("product_categoryfeaturegroup", "Product");
 
                 entity.HasIndex(e => e.CategoryFeatureGroupId);
 
@@ -328,7 +328,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.ProductId, e.DescriptionId })
                     .HasName("PK_product_productdescription_product_id");
 
-                entity.ToTable("product_productdescription", "commandre");
+                entity.ToTable("product_productdescription", "Product");
 
                 entity.HasIndex(e => e.DescriptionId);
 
@@ -354,7 +354,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.ProductId, e.ProductFeatureId })
                     .HasName("PK_product_productfeature_product_id");
 
-                entity.ToTable("product_productfeature", "commandre");
+                entity.ToTable("product_productfeature", "Product");
 
                 entity.HasIndex(e => e.ProductFeatureId);
 
@@ -380,7 +380,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.ProductId, e.ProductRelatedId })
                     .HasName("PK_product_productrelated_product_id");
 
-                entity.ToTable("product_productrelated", "commandre");
+                entity.ToTable("product_productrelated", "Product");
 
                 entity.HasIndex(e => e.ProductId);
 
@@ -406,7 +406,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => e.DescriptionId)
                     .HasName("PK_productdescription_description_id");
 
-                entity.ToTable("productdescription", "commandre");
+                entity.ToTable("productdescription", "Product");
 
                 entity.Property(e => e.DescriptionId)
                     .HasColumnName("description_id")
@@ -427,7 +427,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Productfeature>(entity =>
             {
-                entity.ToTable("productfeature", "commandre");
+                entity.ToTable("productfeature", "Product");
 
                 entity.Property(e => e.ProductFeatureId)
                     .HasColumnName("productFeature_id")
@@ -441,7 +441,7 @@ namespace OnlineStore.Data
                 entity.HasKey(e => new { e.ProductFeatureId, e.FeatureId })
                     .HasName("PK_productfeature_feature_productFeature_id");
 
-                entity.ToTable("productfeature_feature", "commandre");
+                entity.ToTable("productfeature_feature", "Product");
 
                 entity.HasIndex(e => e.FeatureId);
 
@@ -464,7 +464,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Productrelated>(entity =>
             {
-                entity.ToTable("productrelated", "commandre");
+                entity.ToTable("productrelated", "Product");
 
                 entity.Property(e => e.ProductRelatedId)
                     .HasColumnName("productRelated_id")
@@ -475,7 +475,7 @@ namespace OnlineStore.Data
 
             builder.Entity<Supplier>(entity =>
             {
-                entity.ToTable("supplier", "commandre");
+                entity.ToTable("supplier", "Product");
 
                 entity.Property(e => e.SupplierId)
                     .HasColumnName("supplier_id")

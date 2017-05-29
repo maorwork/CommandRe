@@ -10,7 +10,7 @@ namespace OnlineStore.Domain.Orders
 
         public int Quantity { get; set; }
 
-        public int ProductId { get; set; }
+        public long ProductId { get; set; }
 
         public virtual Product Product { get; set; }
 
